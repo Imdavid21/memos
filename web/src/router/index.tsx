@@ -5,7 +5,6 @@ import SuspenseWrapper from "@/layouts/SuspenseWrapper";
 import About from "@/pages/About";
 import AdminSignIn from "@/pages/AdminSignIn";
 import Archived from "@/pages/Archived";
-import AuthCallback from "@/pages/AuthCallback";
 import Explore from "@/pages/Explore";
 import Home from "@/pages/Home";
 import Inboxes from "@/pages/Inboxes";
@@ -43,16 +42,8 @@ const router = createBrowserRouter([
             element: <SignIn />,
           },
           {
-            path: "admin",
-            element: <AdminSignIn />,
-          },
-          {
             path: "signup",
             element: <SignUp />,
-          },
-          {
-            path: "callback",
-            element: <AuthCallback />,
           },
         ],
       },
